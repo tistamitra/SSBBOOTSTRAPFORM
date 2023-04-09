@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form </title>
+
+   <!----- css link----> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+    
+    <div class="container form">
+    
+        <form class="row g-3 needs-validation" novalidate>
+
+      <div class="col-md-6">
+        <label for="f_name" class="form-label">First name</label>
+        <input type="first name" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter your First Name"  required>
+        
+        <div class="invalid-feedback">
+             Enter your First Name.
+          </div>
+      </div>
+
+      <div class="col-md-6">
+
+        <label for="l_name" class="form-label">Last name</label>
+        <input type="l_name" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter your Last Name" required>
+        
+        <div class="invalid-feedback">
+             Enter your Last Name.
+          </div>
+      </div>
+
+    
+      <div class="col-md-6">
+          <label for="p_address" class="form-label"> Address</label>
+          <input type="p_address" class="form-control p_address" id="p_address" name="p_address" placeholder="Enter your Present Address" required>
+          <div class="invalid-feedback">
+              Enter your Address.
+        </div>
+      </div>
+
+
+       <div class="col-md-8">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control email" id="email1" name="email1" placeholder="Enter your Email Address"  required>
+            <div class="invalid-feedback">
+               Enter your Email Address.
+        </div>
+      </div>
+    
+
+        <div class="col-md-4">
+            <label for="religion" class="form-label">Religion</label>
+            <select class="form-control religion" id="religion" name="religion" required>
+                <option></option>
+
+                <option>Hindu</option>
+                <option>Muslim</option>
+                <option>Others</option>
+
+            </select>
+
+            <div class="invalid-feedback">
+             select your Religion.
+        </div>
+      </div>
+    
+
+      <div class="col-md-4">
+        <label for="city" class="form-label">City</label>
+        <input type="city" class="form-control city" id="city" name="city" required>
+
+        <div class="invalid-feedback">
+           Enter your valid city.
+        </div>
+        </div>
+        
+       <div class="col-md-4">
+        <label for="zip" class="form-label">Zip</label>
+        <input type="zip" class="form-control zip" id="zip" required>
+
+        <div class="invalid-feedback">
+            Enter your valid zip.
+        </div>
+      </div>
+    
+      <div class="col-md-4 bg-secondry">
+        <label for="state" class="form-label">State</label>
+            <input type="state" class="form-control state" id="state" name="state" value="India" required>
+
+        
+        <div class="invalid-feedback">
+          Enter your valid state.
+        </div>
+      </div>
+      
+         
+        <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+          <label class="form-check-label" for="invalidCheck3">
+               Terms and Conditions
+          </label>
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit Form</button>
+      </div>
+
+    </form>
+    </div>
+
+<!---- js link---->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
